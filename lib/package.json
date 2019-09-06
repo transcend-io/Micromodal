@@ -5,10 +5,15 @@
   "main": "dist/micromodal.js",
   "cdn": "dist/micromodal.min.js",
   "module": "dist/micromodal.es.js",
+  "jsdelivr": "dist/micromodal.min.js",
   "files": [
     "/dist"
   ],
-  "jsdelivr": "dist/micromodal.min.js",
+  "workspaces": [
+    "lib",
+    "site",
+    "tests"
+  ],
   "author": "Indrashish Ghosh",
   "license": "ISC",
   "repository": "https://github.com/ghosh/micromodal",

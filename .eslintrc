@@ -1,5 +1,9 @@
 {
   "extends": [
-    "ghosh/standard"
+    "ghosh/standard",
+    "plugin:cypress/recommended"
+  ],
+  "plugins": [
+    "cypress"
   ]
 }

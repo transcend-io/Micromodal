@@ -4,7 +4,7 @@ import './prism'
 // Initial config for setting up modals
 MicroModal.init({
   openTrigger: 'data-custom-open',
-  disableScroll: false,
+  disableScroll: true,
   awaitCloseAnimation: true
 })
 

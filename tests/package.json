@@ -1,5 +1,5 @@
 {
-  "name": "@micromodal/site",
+  "name": "@micromodal/tests",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,10 +10,9 @@
   ],
   "main": "src/index.html",
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --detailed-report",
-    "deploy": "now --target production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel ./src/index.html",
+    "test:gui": "cypress open",
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,8 @@
     "micromodal": "0.4.0"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0",
-    "cssnano": "^4.1.10"
+    "cypress": "^3.4.1",
+    "eslint-plugin-cypress": "^2.6.1",
+    "node-sass": "^4.12.0"
   }
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Micromodal.js - Tiny javascript library for creating accessible modal dialogs</title>
+  <meta name="description"
+    content="Micromodal enables you to create accessible modal dialogs with minimal configuration. At just 1.9kb minified and gzipped, its a tiny library for big change.">
+  <link rel="stylesheet" href="../../site/src/styles/index.scss" >
+
+  <style>
+    #modal-1-callback { display: none; }
+  </style>
+</head>
+
+<body class="js-body sans-serif bg-white-20 bt bw3">
+
+  <div class="center cf ph3 mw7">
+
+    <main class="cf mt4 mb5">
+
+      <article class="fl dark-gray w-100 w-75-l pl5-l">
+        <h1 class="f3 fw6 lh-title mb4 black heading" id="introduction">
+          Toggle by auto-binded events
+        </h1>
+
+        <div class="bg-washed-green tc">
+          <div class="mv5 dib">
+            <button class="f6 grow no-underline br2 ph4 pv3 dib white bg-dark-green bn" data-custom-open="modal-1"
+              role="button"
+              id="modal-1-trigger"
+              >
+              Modal 1
+            </button>
+          </div>
+        </div>
+
+        <div id="modal-1-callback" class="mv1">
+          I'm only visible when the modal is open
+        </div>
+
+
+        <div class="lh-copy mt5 mb5 ba b--dotted b--black-30 bl-0 bt-0 br-0"></div>
+
+        <h1 class="f3 fw6 lh-title mb4 black heading" id="introduction">
+          Toggle by ID
+        </h1>
+
+        <div class="bg-washed-green tc">
+          <div class="mv5 dib">
+            <button class="f6 grow no-underline br2 ph4 pv3 dib white bg-dark-green bn"
+              role="button" id="modal-2-trigger">
+              Modal 2
+            </button>
+          </div>
+        </div>
+
+      </article>
+    </main>
+
+  </div>
+
+
+  <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" id="modal-1-overlay" data-custom-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-1-title">
+            Modal 1
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-custom-close></button>
+        </header>
+        <div class="modal__content" id="modal-1-content">
+          <p>This is a completely accessible modal.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="modal__btn" data-custom-close aria-label="Close this dialog window" id="modal-1-close">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" id="modal-2-overlay">
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-2-title">
+            Modal 2
+          </h2>
+          <button class="modal__close" aria-label="Close modal"></button>
+        </header>
+        <div class="modal__content" id="modal-2-content">
+          <p>This modal was opened programmatically .</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="modal__btn" aria-label="Close this dialog window"
+            id="modal-2-close">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

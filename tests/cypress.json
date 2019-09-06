@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://localhost:1234",
+  "fileServerFolder": "./dist",
+  "fixturesFolder": false,
+  "integrationFolder": "./specs/",
+  "screenshotsFolder": "./tests/screenshots",
+  "pluginsFile": false,
+  "supportFile": false,
+  "video": false,
+  "viewportWidth": 980,
+  "viewportHeight": 800
+}
