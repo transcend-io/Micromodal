@@ -35,6 +35,7 @@ The aim of this library is to make modal dialogs accessible and easy to include 
 &nbsp;
 
 ## Features
+
 ✔ Toggles relevant aria attributes on open and close
 
 ✔ Closes modal on overlay click
@@ -52,16 +53,19 @@ The aim of this library is to make modal dialogs accessible and easy to include 
 ## Installation
 
 **via npm**
+
 ```shell
 npm install micromodal --save
 ```
 
 **via yarn**
+
 ```shell
 yarn add micromodal
 ```
 
 **via CDN direct link**
+
 ```html
 <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
 <!-- or -->
@@ -69,6 +73,7 @@ yarn add micromodal
 ```
 
 **direct download**
+
 ```shell
 curl -o https://unpkg.com/micromodal/dist/micromodal.min.js
 ```
@@ -94,6 +99,7 @@ We are always open and invite developers to contribute to Micromodal. We have ke
 Micromodal follows the [standardjs](https://standardjs.com/) coding standard and is part of our `package.json` file. It will help us to maintain consistency in the code base.
 
 #### Development setup
+
 1. Clone Github repo `$ git clone https://github.com/ghosh/micromodal.git`
 2. Install `yarn` package manager (Read [installation guide](https://yarnpkg.com/en/docs/install#mac-tab))
 3. Run `yarn install` in the root folder to install all dependencies
@@ -104,18 +110,23 @@ Micromodal follows the [standardjs](https://standardjs.com/) coding standard and
 &nbsp;
 
 ## Licensing
+
 This project is licensed under [MIT license](https://opensource.org/licenses/MIT).
 
 &nbsp;
+
 ## Related
+
 - [Microtip](https://github.com/ghosh/microtip) - Modern, lightweight, accessible css tooltip library. Just 1kb.
 
 &nbsp;
 
 ## Contact
+
 You can mention us on Twitter for any questions, suggestions or just send us funny GIF. We ♥️ GIFs.
 
 #### Tweet some love
+
 [Tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgoo.gl%2FsEgnBZ&text=Make%20your%20modal%20dialogs%20accessible%20to%20all%20using%20Micromodal.js%2C%20a%20tiny%20library%20for%20big%20change.&hashtags=a11y "Tweet about Micromodal") about Micromodal and help us to spread the message about the importance of Web accessibility and Inclusive design.
 
 &nbsp;
